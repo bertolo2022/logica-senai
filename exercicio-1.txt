@@ -1,0 +1,8 @@
+int a = 10;
+int b = 20;
+
+int aux = a;
+a = b;
+b = aux;
+
+Console.Write(a + " " + b);
