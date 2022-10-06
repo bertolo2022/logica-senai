@@ -1,0 +1,19 @@
+Console.WriteLine("Digite um número: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int cont = 1;
+Console.WriteLine($"Aguarde estamos verificando se o número {num} é primo");
+Console.WriteLine("Aperte qualquer tecla!");
+Console.ReadKey();
+
+for (int i = 1; i < num; i++)
+{
+    if (num % i == 0)
+    {
+        cont = cont + 1;
+    }
+}
+
+if (cont == 2)
+    Console.WriteLine("O numero {0} e primo", num);
+else
+    Console.WriteLine("O numero {0} NAO E primo", num);
