@@ -32,3 +32,27 @@ Exercícios de lógica de programação em C#
   - e 5 como “Assassino“. 
   - Caso contrário, ele será classificado como “Inocente“.
 
+10 - Para doar sangue é necessário ter entre 18 e 67 anos. Faça um aplicativo que pergunte a idade de uma pessoa e diga se ela pode doar sangue ou não. Use alguns dos operadores lógicos OU (||) e E (&&).
+
+11 - Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius (baseado na fórmula abaixo):
+- C/5 = (F-32)/9
+- Observação: Para testar se a sua resposta está correta saiba que 100C = 212F
+
+12 - As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o custo total da compra.
+
+13 - Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam ou não um triângulo.
+- OBS: para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados.
+
+14 - Ler dois valores e imprimir uma das três mensagens a seguir:
+- ‘Números iguais’, caso os números sejam iguais;
+- ‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+-‘Segundo maior’, caso o segundo seja maior que o primeiro.
+
+15 - Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+Álcool
+- até 20 litros, desconto de 3% por litro
+- acima de 20 litros, desconto de 5% por litro
+Gasolina
+- até 20 litros, desconto de 4% por litro
+- acima de 20 litros, desconto de 6% por litro
+Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90.
