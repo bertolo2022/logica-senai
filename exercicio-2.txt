@@ -1,0 +1,11 @@
+double bas;
+double altura;
+double area;
+Console.Write("Informe a base: ");
+bas = Convert.ToInt32(Console.ReadLine());
+Console.Write("Informe a altura: ");
+altura = Convert.ToInt32(Console.ReadLine());
+
+area = bas * altura;
+
+Console.WriteLine(area);
