@@ -1,0 +1,15 @@
+int a, b;
+
+Console.WriteLine("Informe um número");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Informe um número");
+b = Convert.ToInt32(Console.ReadLine());
+
+if(a > b)
+{
+    Console.WriteLine($"{a} maior {b}");
+}
+else
+{
+    Console.WriteLine($"{b} maior {a}");
+}
