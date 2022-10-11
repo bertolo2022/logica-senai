@@ -57,3 +57,19 @@ foreach (var item in nomes)
 }
 
 //Case 2
+int[] array = new int[5];
+for (int i = 0; i < array.Length; i++)
+{
+    Console.Write("Digite o elemento {0}: ", i + 1);
+
+    int n = Convert.ToInt32(ReadLine());
+
+    array[i] = n;
+}
+
+foreach (var i in array)
+{
+    WriteLine(i);
+}
+
+//case3
