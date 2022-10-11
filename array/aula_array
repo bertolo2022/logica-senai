@@ -65,9 +65,9 @@ for (int i = 0; i < array.Length; i++)
 {
     Console.Write("Digite o numero {0}: ", i + 1);
 
-    int n = Convert.ToInt32(ReadLine());
+    array[i] = Convert.ToInt32(ReadLine());
 
-    array[i] = n;
+    //array[i] = n;
 }
 Clear();
 foreach (var i in array)
