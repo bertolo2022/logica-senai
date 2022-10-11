@@ -29,3 +29,31 @@ foreach(var item in carros)
 {
     WriteLine(item);
 }
+
+//Case 1
+string[] nomes = { "André","Maria","José","Pedro","Sebastião"};
+
+WriteLine("Os nomes são...");
+
+foreach (var n in nomes)
+{
+    WriteLine(n);
+}
+
+string novonome = "Clotilde";
+
+List<string> novonomes = new List<string>(nomes.ToList());
+novonomes.Add(novonome);
+nomes = novonomes.ToArray();
+
+Array.Sort(nomes);
+
+WriteLine("O tamnho do array é:" + nomes.Length);
+
+WriteLine("Os nomes são...");
+foreach (var item in nomes)
+{
+    WriteLine(item);
+}
+
+//Case 2
