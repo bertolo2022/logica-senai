@@ -76,3 +76,40 @@ foreach (var i in array)
 }
 ReadKey();
 //case3
+using System;
+using static System.Console;
+
+int[] array = new int[10];
+
+for (int i = 0; i < array.Length; i++)
+{
+    Console.Write("Digite o numero {0}: ", i + 1);
+
+    array[i] = Convert.ToInt32(ReadLine());
+
+    //array[i] = n;
+}
+Clear();
+Array.Sort(array);
+foreach (var p in array)
+    
+{
+    if (p % 2 == 0)
+    {
+        WriteLine(p);
+    }
+}
+WriteLine("\n");
+foreach (var i in array)
+{
+    if (i % 2 == 1)
+    {
+        WriteLine(i);
+    }
+}
+WriteLine("\n");
+foreach (var n in array)
+{
+    WriteLine(n);
+}
+ReadKey();
