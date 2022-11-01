@@ -1,0 +1,138 @@
+using static System.Console;
+using System;
+
+namespace Aula0111
+{
+    class MainClass
+    {
+        public static void PrintMenu(String[] options)
+        {
+            foreach (String option in options)
+            {
+                WriteLine(option);
+            }
+            WriteLine("escolha sua opção:");
+        }
+        public static void Main(String[] args)
+        {
+            WriteLine(">>>>>>>CADASTRO DE PESSOAS<<<<<<<<<<<");
+            String[] options = {"1 - Cadastrar",
+                                "2 - Editar",
+                                "3 - Excluir",
+                                "4 - Listar",
+                                "5 - sair"
+            };
+            int option = 0;
+            while(true){
+                PrintMenu(options);
+                try
+                {
+                    option = Convert.ToInt32(ReadLine());
+                }
+                catch(System.FormatException)
+                {
+                    WriteLine("Por favor, digite uma opção entre 1 e " + options.Length);
+                    continue;
+                }
+                switch (option)
+                {
+                    case 1:
+                        Cadastrar();
+                        break;
+                    case 2:
+                        Editar();
+                        break;
+                    case 3:
+                        Excluir();
+                        break;
+                    case 4:
+                        Listar();
+                        break;
+                    case 5:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        WriteLine("Por favor, digite uma opção entre 1 e " + options.Length);
+                        break;
+                }
+            }
+        }
+
+        static List<string> nomes = new List<string>();
+        static List<int> idades = new List<int>();
+        private static void Cadastrar()
+        {
+            Clear();
+            WriteLine("<<<<<<<<<<<<<<<<Cadastro de Pessoas<<<<<<<<<<<<<\n");
+            WriteLine("Digite o nome da pessoa");
+            nomes.Add(ReadLine());
+            WriteLine("Digite a idade da pessoa");
+            idades.Add(Convert.ToInt32(ReadLine()));
+            WriteLine();
+        }
+        private static void Editar()
+        {
+            Clear();
+            WriteLine("<<<<<<<<<<<<<<<<Edição de Pessoas<<<<<<<<<<<<<\n");
+            string nome = "";
+            WriteLine();
+            WriteLine("Digite o nome da pessoa que você deseja editar");
+            nome = ReadLine();
+            int index = nomes.IndexOf(nome);
+            if(index >= 0)
+            {
+                WriteLine();
+                WriteLine(">>>>Registro que será editato<<<<<<<<<<<");
+                WriteLine($"Nomes: {nomes[index]}");
+                WriteLine($"Nomes: {idades[index]}\n");
+                WriteLine("Digite um novo nome");
+                nomes[index] = ReadLine();
+                WriteLine("Digite uma nova idade");
+                idades[index] = Convert.ToInt32(ReadLine());
+                WriteLine("Registro atualizado com sucesso");
+            }
+            else
+            {
+                WriteLine("Registro não encontrado!");
+            }
+        }
+        private static void Excluir()
+        {
+            Clear();
+            WriteLine("<<<<<<<<<<<<<<<<Exclusão de Pessoas<<<<<<<<<<<<<\n");
+            string nome = "";
+            WriteLine();
+            WriteLine("Digite o nome da pessoa que você deseja excluido");
+            nome = ReadLine();
+            int index = nomes.IndexOf(nome);
+            if (index >= 0)
+            {
+                WriteLine();
+                WriteLine(">>>>Registro que será editato<<<<<<<<<<<");
+                WriteLine($"Nomes: {nomes[index]}");
+                WriteLine($"Nomes: {idades[index]}\n");
+                WriteLine();
+                nomes.RemoveAt(index);
+                idades.RemoveAt(index);
+                WriteLine("Registro exclido com sucesso");
+            }
+            else
+            {
+                WriteLine("Registro não encontrado!");
+            }
+        }
+        private static void Listar()
+        {
+            Clear();
+            WriteLine("Listagem de Pessoas");
+            int pos = 0;
+
+            foreach (var item in nomes)
+            {
+                WriteLine($"Nome: {item} - Idade: {idades[pos]}");
+                pos++;
+            }
+            WriteLine();
+        }
+    }
+}
