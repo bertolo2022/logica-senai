@@ -1,0 +1,25 @@
+string tipo;
+double litros;
+double total = 0;
+Console.WriteLine("Informe o tipo de combustivel [a] para alcool e [g] para gasolina");
+tipo = Console.ReadLine();
+Console.WriteLine("Informe a quantidade de litros: ");
+litros = Convert.ToInt32(Console.ReadLine());
+if (tipo == "a" && litros <= 20)
+{
+    total = (2.90 * 0.3) * litros;
+    Console.WriteLine(total + " A pagar de alcool!");
+}else if (tipo == "a" && litros > 20)
+{
+    total = (2.90 * 0.5) * litros;
+    Console.WriteLine(total + " A pagar de alcool!");
+}
+else if (tipo == "g" && litros <= 20)
+{
+    total = (3.30 * 0.4) * litros;
+    Console.WriteLine(total + " A pagar de gasolina!");
+}else if(tipo == "g" && litros > 20)
+{
+    total = (3.30 * 0.6) * litros;
+    Console.WriteLine(total + " A pagar de gasolina!");
+}
