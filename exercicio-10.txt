@@ -1,0 +1,13 @@
+int idade;
+
+Console.WriteLine("Informe sua idade: ");
+idade = Convert.ToInt32(Console.ReadLine());
+
+if (idade >= 18 && idade <= 67)
+{
+    Console.WriteLine($"Você tem {idade} e pode doar sangue!");
+}
+else
+{
+    Console.WriteLine($"Você tem {idade} e não pode doar sangue!");
+}
