@@ -1,0 +1,18 @@
+double a, b;
+
+Console.WriteLine("Digite um número: ");
+a = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Digite um número: ");
+b = Convert.ToDouble(Console.ReadLine());
+
+if (a == b)
+{
+    Console.WriteLine($"{a} é igual a {b}");
+}else if (a > b)
+{
+    Console.WriteLine($"O primeiro é maior {a} > {b}");
+}
+else
+{
+    Console.WriteLine($"O segundo é maior {b} > {a}");
+}
