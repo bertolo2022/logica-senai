@@ -1,0 +1,25 @@
+using static System.Console;
+
+int codigo_funcionario, ano_nascimento,ano_inicio_empresa,ano_trabalhado,idade;
+
+WriteLine("Informe o código do funcionário: ");
+codigo_funcionario = Convert.ToInt32(Console.ReadLine());
+WriteLine("Informe o ano de nascimento: ");
+ano_nascimento = Convert.ToInt32(Console.ReadLine());
+WriteLine("Informe o ano que você iniciou na empresa: ");
+ano_inicio_empresa = Convert.ToInt32(Console.ReadLine());   
+
+ano_trabalhado = 2022 - ano_inicio_empresa;
+idade = 2022 - ano_nascimento;
+
+if (ano_trabalhado >= 30 && idade >= 65)
+{
+    WriteLine($"Código do funcionário:{codigo_funcionario}\nidade :{idade}\nTempo de empresa:{ano_trabalhado}\nRequerer aposentadoria");
+}else if (ano_trabalhado >= 30 && idade >= 60 )
+{
+    WriteLine($"Código do funcionário:{codigo_funcionario}\nidade :{idade}\nTempo de empresa:{ano_trabalhado}\nRequerer aposentadoria");
+}
+else
+{
+    WriteLine($"Código do funcionário:{codigo_funcionario}\nidade :{idade}\nTempo de empresa:{ano_trabalhado}\nnão requerer aposentadoria");
+}
