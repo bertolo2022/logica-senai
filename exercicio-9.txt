@@ -1,0 +1,29 @@
+int a,b,c,d,e;
+int s = 0;
+
+Console.WriteLine("Resposta com [1] para sim e [0] para não.");
+Console.WriteLine("Telefonou para vítima?");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Esteve no local do crime?");
+b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Mora perto da vítima?");
+c = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Devia para vítima?");
+d = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Já trabalhou com a vítima?");
+e = Convert.ToInt32(Console.ReadLine());
+
+s = a + b + c + d + e;
+
+if(s == 2) 
+{
+    Console.WriteLine("Suspeita!");
+}
+else if(s == 3 || s == 4)
+{
+    Console.WriteLine("Cumplice");
+}
+else if(s == 5)
+{
+    Console.WriteLine("Assassino");
+}
