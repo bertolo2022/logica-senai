@@ -1,0 +1,20 @@
+double p1, p2, p3;
+
+Console.WriteLine("Informe o valor do produto 1:");
+p1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Informe o valor do produto 2:");
+p2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Informe o valor do produto 3:");
+p3 = Convert.ToDouble(Console.ReadLine());
+
+if (p1 < p2 && p1 < p3)
+{
+    Console.WriteLine($"Compre o produto com valor de {p1}");
+}else if(p2 < p1 && p2 < p3)
+{
+    Console.WriteLine($"Compre o produto com valor de {p2}");
+}
+else
+{
+    Console.WriteLine($"Compre o produto com valor de {p3}");
+}
