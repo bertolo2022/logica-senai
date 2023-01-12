@@ -1,0 +1,36 @@
+using static System.Console;
+int n1,n2,n3,n4,n5,n6,n7,n8,n9,n10;
+int soma = 0;
+WriteLine("Digite o numero 1: ");
+n1 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 2: ");
+n2 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 3: ");
+n3 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 4: ");
+n4 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 5: ");
+n5 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 6: ");
+n6 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 7: ");
+n7 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 8: ");
+n8 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 9: ");
+n9 = Convert.ToInt32(Console.ReadLine());
+WriteLine("Digite o numero 10: ");
+n10 = Convert.ToInt32(Console.ReadLine());
+soma = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10;
+
+WriteLine($"A soma dos 10 números é {soma}");
+/*
+for (int i = 1; i <= numero.Length; i++)
+{
+    WriteLine($"Digite o {i}° número: ");
+    int n = Convert.ToInt32(ReadLine());
+    numero[i] = n;
+    soma += n;
+}
+Console.WriteLine(soma);
+*/
