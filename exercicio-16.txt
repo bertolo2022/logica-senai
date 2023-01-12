@@ -1,0 +1,27 @@
+using static System.Console;
+int numero,senha,usuario,numero2;
+usuario = 1234;
+senha = 9999;
+WriteLine("Informe o usuário: ");
+numero2 = Convert.ToInt32(ReadLine());
+if (numero2 != usuario)
+{
+    while (numero2 != usuario)
+    {
+        WriteLine("Usuário não confere informe novamente o usuário: ");
+        numero2 = Convert.ToInt32(ReadLine());
+    }
+}
+WriteLine("Digite a senha: ");
+numero = Convert.ToInt32(Console.ReadLine());
+if(numero != senha)
+{
+    while (senha != numero)
+    {
+        WriteLine("Senha não confere, digite novamente!: ");
+        numero = Convert.ToInt32(Console.ReadLine());
+    }
+}
+
+WriteLine("Acesso permitido!");
+ReadLine();
