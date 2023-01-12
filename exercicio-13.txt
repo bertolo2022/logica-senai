@@ -1,0 +1,17 @@
+double a, b, c;
+
+Console.WriteLine("Informe lado 1:");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Informe lado 2:");
+b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Informe lado 3:");
+c = Convert.ToInt32(Console.ReadLine());
+
+if(a + b < c || b + c < a || a + c < b)
+{
+    Console.WriteLine("É um triângulo!");
+}
+else
+{
+    Console.WriteLine("Não é um triângulo!");
+}
