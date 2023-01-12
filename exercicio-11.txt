@@ -1,0 +1,8 @@
+double f;
+
+Console.WriteLine("Digite a temperatura em Fahrenheit: ");
+f = Convert.ToDouble(Console.ReadLine());
+
+f = ((f - 32) * 5) / 9;
+
+Console.WriteLine("A temperatura em Celsius é : "+Math.Round(f,2));
